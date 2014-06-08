@@ -1,0 +1,1 @@
+../../ProximityKit/ProximityKit.framework/Versions/A/Headers/PKIBeacon.h

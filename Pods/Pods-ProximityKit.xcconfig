@@ -1,0 +1,2 @@
+PODS_PROXIMITYKIT_FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/ProximityKit"
+PODS_PROXIMITYKIT_OTHER_LDFLAGS = -ObjC -framework CoreLocation -framework Foundation -framework ProximityKit

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<!--
+	Download this file to 'ProximityKit.plist' in your project folder, then drag it into Xcode to configure the library.
+-->
+<dict>
+	<key>PKKitName</key>
+	<string>Paypal Fence</string>
+	<key>PKUserIdentifier</key>
+	<string>2914</string>
+	<key>PKUserEmail</key>
+	<string>pickername@gmail.com</string>
+	<key>PKGlobalUserIdentifier</key>
+	<string>4259</string>
+	<key>PKAPIToken</key>
+	<string>c11fc6bb06615f19e40a4b79d986a3ea70b57e29926b0f5d898fc446b88b0159</string>
+	<key>PKKitURL</key>
+	<string>http://proximitykit.com/api/kits/2651</string>
+	<key>PKMapURL</key>
+	<string>http://proximitykit.com/api/maps/775</string>
+	<key>PKMapName</key>
+	<string>PaypalMap</string>
+</dict>
+</plist>

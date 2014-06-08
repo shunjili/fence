@@ -1,0 +1,10 @@
+PODS:
+  - ProximityKit (0.3.4)
+
+DEPENDENCIES:
+  - ProximityKit
+
+SPEC CHECKSUMS:
+  ProximityKit: 25bd28efaa8bd272dc89aef2201e654ddde5ffb1
+
+COCOAPODS: 0.32.1

@@ -14,7 +14,6 @@
 		0830C3321943E60D0067E8A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0830C3311943E60D0067E8A6 /* main.m */; };
 		0830C3361943E60D0067E8A6 /* PFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0830C3351943E60D0067E8A6 /* PFAppDelegate.m */; };
 		0830C3391943E60D0067E8A6 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0830C3371943E60D0067E8A6 /* Main_iPhone.storyboard */; };
-		0830C33C1943E60D0067E8A6 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0830C33A1943E60D0067E8A6 /* Main_iPad.storyboard */; };
 		0830C33F1943E60D0067E8A6 /* PFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0830C33E1943E60D0067E8A6 /* PFViewController.m */; };
 		0830C3411943E60D0067E8A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0830C3401943E60D0067E8A6 /* Images.xcassets */; };
 		0830C3481943E60D0067E8A6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0830C3471943E60D0067E8A6 /* XCTest.framework */; };
@@ -22,6 +21,9 @@
 		0830C34A1943E60D0067E8A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0830C3291943E60D0067E8A6 /* UIKit.framework */; };
 		0830C3521943E60D0067E8A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0830C3501943E60D0067E8A6 /* InfoPlist.strings */; };
 		0830C3541943E60D0067E8A6 /* Paypal_FenceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0830C3531943E60D0067E8A6 /* Paypal_FenceTests.m */; };
+		0830C3631943E7E50067E8A6 /* ProximityKit.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0830C3621943E7E50067E8A6 /* ProximityKit.plist */; };
+		0830C3651943F3890067E8A6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0830C3641943F3890067E8A6 /* MapKit.framework */; };
+		9124B34F23494C24B3F7EA19 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F018A080B6C64D74987F16BA /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +48,6 @@
 		0830C3341943E60D0067E8A6 /* PFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PFAppDelegate.h; sourceTree = "<group>"; };
 		0830C3351943E60D0067E8A6 /* PFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PFAppDelegate.m; sourceTree = "<group>"; };
 		0830C3381943E60D0067E8A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		0830C33B1943E60D0067E8A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		0830C33D1943E60D0067E8A6 /* PFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PFViewController.h; sourceTree = "<group>"; };
 		0830C33E1943E60D0067E8A6 /* PFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PFViewController.m; sourceTree = "<group>"; };
 		0830C3401943E60D0067E8A6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -55,6 +56,10 @@
 		0830C34F1943E60D0067E8A6 /* Paypal FenceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Paypal FenceTests-Info.plist"; sourceTree = "<group>"; };
 		0830C3511943E60D0067E8A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0830C3531943E60D0067E8A6 /* Paypal_FenceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Paypal_FenceTests.m; sourceTree = "<group>"; };
+		0830C3621943E7E50067E8A6 /* ProximityKit.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ProximityKit.plist; sourceTree = "<group>"; };
+		0830C3641943F3890067E8A6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D53EF01DEA8449D48B618155 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		F018A080B6C64D74987F16BA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +67,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0830C3651943F3890067E8A6 /* MapKit.framework in Frameworks */,
 				0830C3281943E60D0067E8A6 /* CoreGraphics.framework in Frameworks */,
 				0830C32A1943E60D0067E8A6 /* UIKit.framework in Frameworks */,
 				0830C3261943E60D0067E8A6 /* Foundation.framework in Frameworks */,
+				9124B34F23494C24B3F7EA19 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +95,7 @@
 				0830C34D1943E60D0067E8A6 /* Paypal FenceTests */,
 				0830C3241943E60D0067E8A6 /* Frameworks */,
 				0830C3231943E60D0067E8A6 /* Products */,
+				D53EF01DEA8449D48B618155 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,10 +111,12 @@
 		0830C3241943E60D0067E8A6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0830C3641943F3890067E8A6 /* MapKit.framework */,
 				0830C3251943E60D0067E8A6 /* Foundation.framework */,
 				0830C3271943E60D0067E8A6 /* CoreGraphics.framework */,
 				0830C3291943E60D0067E8A6 /* UIKit.framework */,
 				0830C3471943E60D0067E8A6 /* XCTest.framework */,
+				F018A080B6C64D74987F16BA /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -117,7 +127,6 @@
 				0830C3341943E60D0067E8A6 /* PFAppDelegate.h */,
 				0830C3351943E60D0067E8A6 /* PFAppDelegate.m */,
 				0830C3371943E60D0067E8A6 /* Main_iPhone.storyboard */,
-				0830C33A1943E60D0067E8A6 /* Main_iPad.storyboard */,
 				0830C33D1943E60D0067E8A6 /* PFViewController.h */,
 				0830C33E1943E60D0067E8A6 /* PFViewController.m */,
 				0830C3401943E60D0067E8A6 /* Images.xcassets */,
@@ -129,6 +138,7 @@
 		0830C32C1943E60D0067E8A6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0830C3621943E7E50067E8A6 /* ProximityKit.plist */,
 				0830C32D1943E60D0067E8A6 /* Paypal Fence-Info.plist */,
 				0830C32E1943E60D0067E8A6 /* InfoPlist.strings */,
 				0830C3311943E60D0067E8A6 /* main.m */,
@@ -162,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0830C3571943E60D0067E8A6 /* Build configuration list for PBXNativeTarget "Paypal Fence" */;
 			buildPhases = (
+				A72658594FE64681BD998328 /* Check Pods Manifest.lock */,
 				0830C31E1943E60C0067E8A6 /* Sources */,
 				0830C31F1943E60C0067E8A6 /* Frameworks */,
 				0830C3201943E60C0067E8A6 /* Resources */,
+				BF1144687883459BA3CDF860 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,8 +244,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0830C33C1943E60D0067E8A6 /* Main_iPad.storyboard in Resources */,
 				0830C3411943E60D0067E8A6 /* Images.xcassets in Resources */,
+				0830C3631943E7E50067E8A6 /* ProximityKit.plist in Resources */,
 				0830C3391943E60D0067E8A6 /* Main_iPhone.storyboard in Resources */,
 				0830C3301943E60D0067E8A6 /* InfoPlist.strings in Resources */,
 			);
@@ -248,6 +260,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A72658594FE64681BD998328 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BF1144687883459BA3CDF860 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0830C31E1943E60C0067E8A6 /* Sources */ = {
@@ -293,14 +338,6 @@
 				0830C3381943E60D0067E8A6 /* Base */,
 			);
 			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		0830C33A1943E60D0067E8A6 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0830C33B1943E60D0067E8A6 /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		0830C3501943E60D0067E8A6 /* InfoPlist.strings */ = {
@@ -388,6 +425,7 @@
 		};
 		0830C3581943E60D0067E8A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D53EF01DEA8449D48B618155 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -395,12 +433,14 @@
 				GCC_PREFIX_HEADER = "Paypal Fence/Paypal Fence-Prefix.pch";
 				INFOPLIST_FILE = "Paypal Fence/Paypal Fence-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		0830C3591943E60D0067E8A6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D53EF01DEA8449D48B618155 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -408,6 +448,7 @@
 				GCC_PREFIX_HEADER = "Paypal Fence/Paypal Fence-Prefix.pch";
 				INFOPLIST_FILE = "Paypal Fence/Paypal Fence-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -471,6 +512,7 @@
 				0830C3591943E60D0067E8A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0830C35A1943E60D0067E8A6 /* Build configuration list for PBXNativeTarget "Paypal FenceTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +521,7 @@
 				0830C35C1943E60D0067E8A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -13,6 +13,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    // create and start to sync the manager with the Proximity Kit backend
+    self.proximityKitManager = [PKManager managerWithDelegate:self];
+    [self.proximityKitManager start];
     return YES;
 }
 							
@@ -42,5 +46,49 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+#pragma mark- Proximity Kit Delegate Methods
+- (void)proximityKitDidSync:(PKManager *)manager {
+    NSLog(@"Did Sync");
+}
+- (void)proximityKit:(PKManager *)manager didEnter:(PKRegion*)region {
+    NSLog(@"Entered Region %@ (%@)", region.name, region.identifier);
+    CLLocation *location = [manager.locationManager location];
+    NSDictionary *info = @{@"name":region.name, @"location":location};
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"enterRegion" object:self userInfo:info];
+    self.currentRegion = region;
+    
+}
+
+- (void)proximityKit:(PKManager *)manager didExit:(PKRegion *)region {
+    NSLog(@"Exit Region %@ (%@)", region.name, region.identifier);
+
+    CLLocation *location = [manager.locationManager location];
+    NSDictionary *info = @{@"name":region.name, @"location":location};
+    self.currentRegion = nil;
+
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"exitRegion" object:self userInfo:info];
+}
+
+//- (void)proximityKit:(PKManager *)manager didRangeBeacons:(NSArray *)ibeacons inRegion:(PKIBeacon *)region
+//{
+//    for (PKIBeacon *ibeacon in ibeacons) {
+//        NSLog(@"Ranged UUID: %@ Major:%ld Minor:%ld RSSI:%ld", [ibeacon.uuid UUIDString], (long)ibeacon.major, (long)ibeacon.minor, (long)ibeacon.rssi);
+//    }
+//}
+//
+//- (void)proximityKit:(PKManager *)manager didDetermineState:(PKRegionState)state forRegion:(PKRegion *)region
+//{
+//    
+//    if (state == PKRegionStateInside) {
+//        NSLog(@"State Changed: inside region %@ (%@)", region.name, region.identifier);
+//    } else if (state == PKRegionStateOutside) {
+//        NSLog(@"State Changed: outside region %@ (%@)", region.name, region.identifier);
+//    } else if (state == PKRegionStateUnknown) {
+//        NSLog(@"State Changed: unknown region %@ (%@)", region.name, region.identifier);
+//    }
+//}
+
+
 
 @end

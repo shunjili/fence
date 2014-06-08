@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <ProximityKit/ProximityKit.h>
 
-@interface PFAppDelegate : UIResponder <UIApplicationDelegate>
+@interface PFAppDelegate : UIResponder <UIApplicationDelegate, PKManagerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) PKManager *proximityKitManager;
+@property (strong, nonatomic) PKRegion *currentRegion;
+@property (assign, nonatomic) BOOL isInPayPal;
 @end
