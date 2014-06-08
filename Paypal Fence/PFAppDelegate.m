@@ -73,8 +73,9 @@
     NSDictionary *info = @{@"name":region.name, @"location":location};
     if (self.currentRegion == region) {
         self.currentRegion = nil;
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"exitRegion" object:self userInfo:info];
     }
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"exitRegion" object:self userInfo:info];
+
 }
 
 //- (void)proximityKit:(PKManager *)manager didRangeBeacons:(NSArray *)ibeacons inRegion:(PKIBeacon *)region
