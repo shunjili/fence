@@ -47,6 +47,12 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+- (void) application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
+{
+    // Called when updating applicaiton data in the background. Requires that UIBackgroundModes contains "fetch" in the applications's Info.plist. See PKExample-Info.plist for an example.
+    [self.proximityKitManager syncWithCompletionHandler: completionHandler];
+}
+
 #pragma mark- Proximity Kit Delegate Methods
 - (void)proximityKitDidSync:(PKManager *)manager {
     NSLog(@"Did Sync");
@@ -65,9 +71,10 @@
 
     CLLocation *location = [manager.locationManager location];
     NSDictionary *info = @{@"name":region.name, @"location":location};
-    self.currentRegion = nil;
-
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"exitRegion" object:self userInfo:info];
+    if (self.currentRegion == region) {
+        self.currentRegion = nil;
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"exitRegion" object:self userInfo:info];
+    }
 }
 
 //- (void)proximityKit:(PKManager *)manager didRangeBeacons:(NSArray *)ibeacons inRegion:(PKIBeacon *)region
